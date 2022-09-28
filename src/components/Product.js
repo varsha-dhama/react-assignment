@@ -3,7 +3,6 @@ import classes from './Product.module.css'
 
 const Product = (props) => {
   return (
-    <>
       <div className={classes.product}>
         <img
           className={classes.productImg}
@@ -14,7 +13,6 @@ const Product = (props) => {
         <p>{props.name}</p>
         <p>Price: {props.price}</p>
       </div>
-    </>
   );
 }
 
