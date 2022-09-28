@@ -1,0 +1,35 @@
+.productDescription{
+    width: 80%;
+    margin: 7rem auto;
+}
+/* .productImageContainer{
+    display: inline-block;    
+    width: 30%;
+    text-align: center;
+    margin: 0 50px;
+} */
+.productImage{
+    margin: 2rem;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    border-radius: 15%;
+}
+
+.productDetails{
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    margin: 0 3rem;
+}
+
+.productDetails p{
+    margin: 1rem 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.productDetails span{
+    color: grey;
+}
