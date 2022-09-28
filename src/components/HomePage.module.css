@@ -1,0 +1,9 @@
+.container{
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+hr{
+    margin: 15px 0;
+}
