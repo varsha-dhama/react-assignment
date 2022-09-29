@@ -10,19 +10,19 @@ const ProductList = () => {
     fetch(`https://node-sample-api.herokuapp.com/api/products?page=${pageNum}`)
       .then((response) => response.json())
       .then((data) => {
-        setProducts((ps) => [...ps, ...data.data]);
+        setProducts([...products, ...data.data]);
       });
   }, [pageNum]);
 
   const loadMoreProducts = () => {
-    setPageNum(ps => ps+1);
+    setPageNum(pageNum => pageNum+1);
   }
 
   return (
     <div className={classes.productList}>
         <h2>Products</h2>
-      {products.map((product) => (
-        <Product src={product.img} name={product.name} price={product.price} />
+      {products?.length>0 && products.map((product, index) => (
+        <Product key={product.id} id={product.id} src={product.img} name={product.name} price={product.price} />
       ))}
       <button className={classes.btn} onClick={loadMoreProducts}>Load More</button>
     </div>
