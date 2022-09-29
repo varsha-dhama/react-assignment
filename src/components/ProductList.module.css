@@ -1,5 +1,12 @@
 .productList{
     margin: 50px auto;
+    text-align: center;
+}
+
+.productList h2{
+  text-align: left;
+  font-weight: bold;
+  color: grey;
 }
 .btn {
   border-radius: 28px;

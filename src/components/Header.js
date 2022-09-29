@@ -7,10 +7,18 @@ function Header(props) {
   return (
     <>
       <header className={classes.header}>
-        <h1>T-Mart</h1>
-        <a href="/">
-          <FaShoppingCart fontSize={20} color="white"/>
-        </a>
+        <div className={classes.brandName}>
+          <h1>T-Mart</h1>
+        </div>
+
+        <div className={classes.headerIcons}>
+          <span>
+            <FaShoppingCart />
+          </span>
+          <span>
+            <FaSearch />
+          </span>
+        </div>
       </header>
     </>
   );

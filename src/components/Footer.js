@@ -6,7 +6,7 @@ function Footer(props) {
   return (
     <>
       <footer className={classes.footer}>
-        <span>Copyrights ⓒ 2022</span> <FaFacebook/> <FaTwitter/>
+        <span>Copyrights ⓒ 2022</span> <FaFacebook className={classes.footerIcons}/> <FaTwitter className={classes.footerIcons}/>
       </footer>
     </>
   );

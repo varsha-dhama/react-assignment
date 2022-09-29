@@ -4,6 +4,11 @@
     margin: auto;
 }
 
-hr{
-    margin: 15px 0;
+.container hr{
+    margin: 3rem 0;
+    background-color: #fff;
+	border-top: 1px solid grey;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 }

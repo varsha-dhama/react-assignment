@@ -5,7 +5,7 @@
   width: 100%;
   height: 5rem;
   background-color: #ff9999;
-  color: white;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,3 +13,34 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   z-index: 10;
 }
+
+.header h1{ 
+  font-weight: bolder; 
+  font-size: 2rem; 
+  color: white 
+}
+
+.header h1:hover{
+  color: black;
+}
+
+.brandName{
+    align-items: left;
+}
+
+.headerIcons{
+  align-items: left;
+  font-size: 20px;
+  color: white;
+}
+
+.headerIcons span{
+    margin-right: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.headerIcons span:hover{
+  color: black;
+}
+

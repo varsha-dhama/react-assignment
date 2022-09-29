@@ -1,6 +1,7 @@
 .productDescription{
     width: 80%;
     margin: 7rem auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 /* .productImageContainer{
     display: inline-block;    
@@ -11,17 +12,16 @@
 .productImage{
     margin: 2rem;
     padding: 10px;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     float: left;
-    border-radius: 15%;
 }
 
 .productDetails{
     display: inline-block;
     width: 50%;
     text-align: left;
-    margin: 0 3rem;
+    margin: 2rem 5rem;
 }
 
 .productDetails p{
