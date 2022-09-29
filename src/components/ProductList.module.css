@@ -1,9 +1,9 @@
-.productList{
-    margin: 50px auto;
-    text-align: center;
+.productList {
+  margin: 50px auto;
+  text-align: center;
 }
 
-.productList h2{
+.productList h2 {
   text-align: left;
   font-weight: bold;
   color: grey;

@@ -1,7 +1,7 @@
-import React from 'react'
-import Slider from './Slider'
-import ProductList from './ProductList'
-import classes from './HomePage.module.css'
+import React from "react";
+import Slider from "./Slider";
+import ProductList from "./ProductList";
+import classes from "./HomePage.module.css";
 
 const HomePage = () => {
   return (
@@ -11,6 +11,6 @@ const HomePage = () => {
       <ProductList />
     </div>
   );
-}
+};
 
-export default HomePage
+export default HomePage;

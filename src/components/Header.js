@@ -8,7 +8,9 @@ function Header(props) {
     <>
       <header className={classes.header}>
         <div className={classes.brandName}>
-          <h1>T-Mart</h1>
+          <a href="/">
+            <h1>T-Mart</h1>
+          </a>
         </div>
 
         <div className={classes.headerIcons}>

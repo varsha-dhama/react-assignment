@@ -1,16 +1,15 @@
-.product{
-    display: inline-block;
-    margin: 15px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+.product {
+  display: inline-block;
+  margin: 15px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
-.productImg{
-    height: 200px;
-    width: 200px;
-    padding: 20px;
-
+.productImg {
+  height: 200px;
+  width: 200px;
+  padding: 20px;
 }
-.product p{
-    font-weight: bold;
+.product p {
+  font-weight: bold;
 }

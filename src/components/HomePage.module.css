@@ -1,14 +1,14 @@
-.container{
-    width: 80%;
-    align-items: center;
-    margin: auto;
+.container {
+  width: 80%;
+  align-items: center;
+  margin: auto;
 }
 
-.container hr{
-    margin: 3rem 0;
-    background-color: #fff;
-	border-top: 1px solid grey;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
+.container hr {
+  margin: 3rem 0;
+  background-color: #fff;
+  border-top: 1px solid grey;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
 }
