@@ -9,7 +9,7 @@ const Slider = () => {
     fetch("https://node-sample-api.herokuapp.com/api/home")
       .then((response) => response.json())
       .then((data) => {
-        setCarouselImages(data?.carousel);
+        setCarouselImages((data?.carousel).slice(0,3));
       });
   }, []);
 
