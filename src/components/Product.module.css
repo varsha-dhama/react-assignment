@@ -10,6 +10,11 @@
   width: 200px;
   padding: 20px;
 }
+
 .product p {
   font-weight: bold;
+}
+
+.productLink{
+  color: black;
 }

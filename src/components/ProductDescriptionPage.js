@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import classes from "./ProductDescriptionPage.module.css";
-import { FaStar } from "react-icons/fa";
+import { Rate } from "antd";
+import "antd/dist/antd.css";
+import Header from "./Header";
 
 const ProductDescriptionPage = () => {
   const [productDetail, setProductDetail] = useState({});
@@ -17,41 +19,31 @@ const ProductDescriptionPage = () => {
       });
   }, [params]);
 
-  const star = Array(productDetail?.rating).fill(null);
-
   return (
-    <div className={classes.productDescription}>
-      <div>
-        <img className={classes.productImage} src={productDetail?.img} alt="" />
-      </div>
-      <div className={classes.productDetails}>
-        <p>
-          <span>Product Name: </span>
+    <>
+      <Header pathname={window.location.pathname} />
+      <div className={classes.productDescription}>
+        <div className={classes.productImageContainer}>
+          <img
+            className={classes.productImage}
+            src={productDetail?.img}
+            alt="T-Mart Product"
+          />
+        </div>
+        <div className={classes.productDetails}>
+          <h1>Product Name: </h1>
           {productDetail?.name}
-        </p>
-        <p>
-          <span>Rating: </span>
-          {productDetail?.rating}
-        </p>
-        <p>
-          <span>Rating :</span>{" "}
-          {star.map((_, index) => (
-            <React.Fragment key={index}>
-              <FaStar color="FFD700" fontSize="16" />
-            </React.Fragment>
-          ))}
-        </p>
-        <p>
-          <span>Price: </span>
-          {productDetail?.price}
-        </p>
-        <p>
-          <span>Description: </span>
-          {productDetail?.description}
-        </p>
-        {/* <p>{params.productId}</p> */}
+          <h1>Rating :</h1>
+          <Rate disabled value={productDetail?.rating} />
+          <h1>Price: </h1>
+          {productDetail?.price}{"/-"}
+          <h1>Description:</h1>
+          <p className={classes.productDescriptionText}>
+            {productDetail?.description}
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

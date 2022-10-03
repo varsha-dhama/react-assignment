@@ -9,7 +9,8 @@ import {Route, Switch} from 'react-router-dom';
 function App() {
   return (
     <>
-      <Header />
+    {window.location.path !=="/" ? <Header modify={false}/> : <Header modify={true}/>}
+      
       <Switch>
         <Route path="/" exact>
           <HomePage />

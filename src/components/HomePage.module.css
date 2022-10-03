@@ -1,7 +1,6 @@
 .container {
   width: 80%;
-  align-items: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .container hr {
